@@ -24,7 +24,7 @@
   justify-content: center;
 
   transition: background 0.3s;
-  margin-top: 3.2rem;
+  margin-top: 2.7rem;
 }
 #search-teachers button:hover {
   background-color: var(--color-secondary-dark);
@@ -90,7 +90,7 @@
   display: block;
 }
 
-.teacher-item footer button {
+.teacher-item footer .button {
   width: 20rem;
   height: 5.6rem;
   background: var(--color-secondary);
@@ -109,7 +109,7 @@
   transition: background 0.3s;
   margin-left: 1.6rem;
 }
-.teacher-item footer button:hover {
+.teacher-item footer .button:hover {
   background: var(--color-secondary-dark);
 }
 

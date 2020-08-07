@@ -1,0 +1,25 @@
+{
+  "name": "next-level_week",
+  "version": "1.0.0",
+  "description": "semana rockseat , trabalhando no projeto de iniciante com Mark Bryto.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/serve.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evertonshow/next-level_week.git"
+  },
+  "keywords": [],
+  "author": "Everton Souza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evertonshow/next-level_week/issues"
+  },
+  "homepage": "https://github.com/evertonshow/next-level_week#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "nunjucks": "^3.2.2"
+  }
+}
