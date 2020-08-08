@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>proffy | sua plataforma de estudos</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/partials/header.css" />
     <link rel="stylesheet" href="./styles/partials/forms.css" />
     <link rel="stylesheet" href="./styles/partials/page-give-classes.css" />
+
+    <title>proffy</title>
   </head>
   <body id="page-give-classes">
     <div id="container">
@@ -26,13 +32,13 @@
       </header>
 
       <main>
-        <form action="" id="create-class">
+        <form action="/save-classes" id="create-class" method="POST">
           <fieldset>
             <legend>Seus Dados</legend>
 
             <div class="input-block">
               <label for="name">Nome completo</label>
-              <input type="text" name="name" id="name" required />
+              <input name="name" id="name" required />
             </div>
 
             <div class="input-block">
@@ -92,7 +98,7 @@
             <div class="schedule-item">
               <div class="select-block">
                 <label for="weekday">Dia da Semana</label>
-                <select name="weekday[]" id="weekday">
+                <select name="weekday[]" required>
                   <option value="">Selecione uma opção</option>
 
                   {% for day in weekdays %}
@@ -104,13 +110,13 @@
               </div>
 
               <div class="input-block">
-                <label for="time-from">Das</label>
-                <input type="time" name="time-from[]" required />
+                <label for="time_from">Das</label>
+                <input type="time" name="time_from[]" required />
               </div>
 
               <div class="input-block">
-                <label for="time-to">Até</label>
-                <input type="time" name="time-to[]" required />
+                <label for="time_to">Até</label>
+                <input type="time" name="time_to[]" required />
               </div>
             </div>
           </fieldset>
@@ -122,10 +128,13 @@
             Importante! <br />
             Preencha todos os dados
           </p>
-          <button type="submit" form="create-class">Salvar cadastro</button>
+          <button type="submit" form="create-class" onclick="redirects()">
+            Salvar cadastro
+          </button>
         </footer>
       </main>
     </div>
     <script src="./script/addfieldset.js" defer></script>
+    <script src="./script/addredirect.js" defer></script>
   </body>
 </html>

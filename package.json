@@ -10,7 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/evertonshow/next-level_week.git"
   },
-  "keywords": [],
   "author": "Everton Souza",
   "license": "MIT",
   "bugs": {
@@ -20,6 +19,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^2.0.4",
-    "nunjucks": "^3.2.2"
+    "nunjucks": "^3.2.2",
+    "sqlite-async": "^1.1.0"
   }
 }
